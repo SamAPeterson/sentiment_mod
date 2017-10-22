@@ -46,9 +46,9 @@ def find_features(document):
     return features
 
 #featuresets = [(find_features(rev),category) for (rev,category) in documents]
-featuresets_save = open("featuresets.p","rb")
-featuresets = pickle.load(featuresets_save)
-featuresets_save.close()
+# featuresets_save = open("featuresets.p","rb")
+# featuresets = pickle.load(featuresets_save)
+# featuresets_save.close()
 
 classifier_f = open("classifier.p","rb")
 classifier = pickle.load(classifier_f)
@@ -104,6 +104,6 @@ def main():
     print("Weighted percentage of positive tweets:",weightedSumPos/1000)
     
     
-main()
+#main()
     
 
